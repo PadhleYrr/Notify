@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingBottom="16dp"
+            android:text="Checking notification access..." />
+
+        <Button
+            android:id="@+id/btnGrantAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant Notification Access" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telegram Bot Token" />
+        <EditText
+            android:id="@+id/editToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword"
+            android:hint="123456789:AAExample-Token" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Telegram Chat ID" />
+        <EditText
+            android:id="@+id/editChatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="e.g. 123456789" />
+
+        <CheckBox
+            android:id="@+id/checkSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Forward SMS notifications"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/checkGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forward Gmail notifications"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Extra package names (comma separated, optional)" />
+        <EditText
+            android:id="@+id/editExtraPackages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="com.example.someapp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Save Settings" />
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Send Test Message" />
+
+    </LinearLayout>
+</ScrollView>
